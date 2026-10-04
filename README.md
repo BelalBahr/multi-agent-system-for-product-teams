@@ -37,6 +37,10 @@ Code has a compiler and a test suite. Product judgment does not, so trust comes 
 - **Personal data is redacted before storage,** inside the connector.
 - **Data stays on your machine.** The only outbound flow is redacted text to the model provider you choose.
 
+## System design
+
+![System design. Sources feed read-only connectors. In the self-hosted core, nine agents work through a scoped store under a policy engine. Nothing leaves without a person's approval, and write-back is drafts only.](docs/images/system-design.png)
+
 ## The loop
 
 ```
