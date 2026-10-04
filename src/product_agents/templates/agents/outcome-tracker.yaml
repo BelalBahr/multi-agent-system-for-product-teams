@@ -1,0 +1,7 @@
+name: outcome-tracker
+role: Compare each decision's result to its hypothesis at the review date
+tier: B
+reads: [decisions, outcomes]
+writes: [outcomes]
+connectors: [mixpanel]
+prompt: ../prompts/outcome-tracker.md

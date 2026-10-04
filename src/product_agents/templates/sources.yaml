@@ -1,0 +1,7 @@
+# What `product-agents run weekly` ingests. Credentials come from environment variables.
+sources:
+  - type: zendesk        # needs ZENDESK_SUBDOMAIN, ZENDESK_EMAIL, ZENDESK_API_TOKEN
+# - type: jsonl
+#   path: data/tickets.jsonl
+# - type: folder
+#   path: data/interviews

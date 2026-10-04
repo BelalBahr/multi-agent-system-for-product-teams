@@ -1,0 +1,10 @@
+name: researcher
+role: Turn interview transcripts and competitor pages into evidence-backed notes
+tier: B
+reads: [evidence]
+writes: [research]
+connectors: []               # it never fetches: pages are fetched by a person-run command
+reads_untrusted: true
+prompt: ../prompts/researcher.md
+budget:
+  max_tokens_per_run: 200000

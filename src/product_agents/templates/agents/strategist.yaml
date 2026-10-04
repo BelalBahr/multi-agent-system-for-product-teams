@@ -1,0 +1,10 @@
+name: strategist
+role: Turn a theme into a draft decision with options and a recommendation
+tier: B                       # drafts only: a person and the Red Team gate it
+reads: [themes, evidence, strategy, decisions]
+writes: [decisions]
+connectors: []
+reads_untrusted: true
+prompt: ../prompts/strategist.md
+budget:
+  max_tokens_per_run: 200000

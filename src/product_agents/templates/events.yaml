@@ -1,0 +1,9 @@
+# The events and pages the Analyst and Strategist may reference.
+# Only names listed here can ever be used, so a model cannot invent a metric.
+# Describe each one in plain words: the model picks by description.
+events: []
+#  - name: export_completed          # exactly as it appears in Mixpanel
+#    description: A user finished downloading a report export
+pages: []
+#  - url_contains: /reports/export   # a fragment of the page URL as Clarity records it
+#    description: The report export page

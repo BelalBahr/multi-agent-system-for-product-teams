@@ -1,0 +1,10 @@
+name: analyst
+role: Back each top theme with analytics numbers and behavior signals
+tier: A
+reads: [themes, evidence]
+writes: [evidence]            # metric evidence only; it cannot change themes or decisions
+connectors: [mixpanel, clarity]   # read-only query connectors, whichever are configured
+reads_untrusted: true         # it reads quotes taken from customer text
+prompt: ../prompts/analyst.md
+budget:
+  max_tokens_per_run: 100000

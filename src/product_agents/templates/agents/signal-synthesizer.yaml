@@ -1,0 +1,10 @@
+name: signal-synthesizer
+role: Cluster customer evidence into themes with counts, trend and verbatim quotes
+tier: A                      # A acts alone, B drafts for approval, C advises only
+reads: [evidence, themes]
+writes: [themes]
+connectors: []               # reads from the store only; it holds no connector
+reads_untrusted: true        # it reads raw customer text, so it may never hold a write connector
+prompt: ../prompts/signal-synthesizer.md
+budget:
+  max_tokens_per_run: 200000

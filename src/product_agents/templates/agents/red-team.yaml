@@ -1,0 +1,10 @@
+name: red-team
+role: Argue against a draft decision before a person sees it
+tier: C                       # advises only: can attach dissent, nothing else
+reads: [themes, evidence, strategy, decisions]
+writes: [dissent]
+connectors: []
+reads_untrusted: true
+prompt: ../prompts/red-team.md
+budget:
+  max_tokens_per_run: 150000

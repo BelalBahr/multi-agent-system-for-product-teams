@@ -1,0 +1,14 @@
+# Who the Stakeholder Comms agent writes for. Edit freely; add or remove audiences.
+audiences:
+  - name: executives
+    wants: Outcomes, risks, and anything that needs a decision from them. Short.
+    avoid: Task-level detail and internal jargon.
+  - name: support
+    wants: What changes for customers, and what to tell them.
+    avoid: Internal planning detail and anything that sounds like a promise to customers.
+  - name: sales
+    wants: What is shipping or fixed that they can talk about, and what is not committed.
+    avoid: Dates or capabilities that are not in the update.
+  - name: engineering
+    wants: Decisions made, why, and what is blocked.
+    avoid: Marketing language.

@@ -1,0 +1,10 @@
+name: stakeholder-comms
+role: Rewrite one update for each audience without adding facts
+tier: B
+reads: [decisions, outcomes, updates]
+writes: [updates]
+connectors: []
+reads_untrusted: true
+prompt: ../prompts/stakeholder-comms.md
+budget:
+  max_tokens_per_run: 100000

@@ -1,0 +1,9 @@
+# Install-wide policy. Agent files cannot override this.
+budgets:
+  weekly_token_cap: 2000000   # all agents combined, rolling 7 days. Remove for no cap.
+
+gates:
+  prioritize:
+    # A decision cannot be approved until the Red Team has recorded its dissent.
+    # A person can waive this explicitly with --waive-redteam, and the waiver is logged.
+    require_dissent: true

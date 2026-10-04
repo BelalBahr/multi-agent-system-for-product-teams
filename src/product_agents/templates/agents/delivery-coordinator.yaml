@@ -1,0 +1,10 @@
+name: delivery-coordinator
+role: Watch the work tracker for overdue, blocked and stale work and draft a status update
+tier: B                       # drafts only: a person approves before anything is shared
+reads: [decisions, specs]
+writes: [updates]
+connectors: [clickup-read]    # read-only
+reads_untrusted: true         # task names and descriptions are untrusted text
+prompt: ../prompts/delivery-coordinator.md
+budget:
+  max_tokens_per_run: 60000

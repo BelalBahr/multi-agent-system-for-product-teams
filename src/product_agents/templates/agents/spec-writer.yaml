@@ -1,0 +1,10 @@
+name: spec-writer
+role: Draft a spec from an approved decision, citing evidence for every requirement
+tier: B
+reads: [themes, evidence, strategy, decisions, specs]
+writes: [specs]
+connectors: []
+reads_untrusted: true
+prompt: ../prompts/spec-writer.md
+budget:
+  max_tokens_per_run: 200000
